@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Hogar Canino Integral</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #00892e;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* MENÚ */
+        nav {
+            background-color: #dff1fc;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00892e;
+        }
+
+        /* CONTENIDO */
+        .contenido {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contenido h2 {
+            color: #00892e;
+            margin-bottom: 15px;
+        }
+
+        .contenido p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .servicio {
+            background-color: #f4fdf7;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .servicio h3 {
+            color: #00892e;
+            margin-bottom: 10px;
+        }
+
+        .servicio p {
+            font-size: 15px;
+        }
+
+        /* BOTÓN WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Nuestros Servicios</h1>
+        <p>Cuidado responsable y personalizado para tu perro</p>
+    </div>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes_somos.html">Quiénes somos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="contenido">
+        <h2>¿Qué ofrecemos?</h2>
+        <p>
+            En Hogar Canino Integral brindamos servicios pensados para el bienestar,
+            comodidad y tranquilidad de tu mascota, en un ambiente familiar y seguro.
+        </p>
+
+        <div class="servicios">
+            <div class="servicio">
+                <h3> Guardería diurna</h3>
+                <p>
+                    Cuidado durante el día con supervisión constante,
+                    espacios limpios y tiempo de descanso.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <h3> Hospedaje nocturno</h3>
+                <p>
+                    Servicio ideal para viajes o ausencias,
+                    donde tu perro pasa la noche en un entorno tranquilo.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <h3> Estancias largas</h3>
+                <p>
+                    Cuidado por varios días o semanas,
+                    perfecto para vacaciones de los dueños.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <h3> Higiene y desinfección</h3>
+                <p>
+                    Limpieza diaria de las áreas comunes
+                    para garantizar salud y bienestar.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <h3> Supervisión permanente</h3>
+                <p>
+                    Atención constante y monitoreo
+                    durante toda la estadía.
+                </p>
+            </div>
+
+            <div class="servicio">
+                <h3> Espacios de descanso</h3>
+                <p>
+                    Casas individuales y zonas tranquilas
+                    para que tu perro se sienta como en casa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÓN WHATSAPP -->
+    <a href="https://wa.me/573108662385?text=Hola%20me%20gustaría%20conocer%20los%20servicios%20de%20Hogar%20Canino%20Integral"
+       class="whatsapp-float"
+       target="_blank"
+       title="Contáctanos por WhatsApp">
+        🐾
+    </a>
+
+</body>
+</html>

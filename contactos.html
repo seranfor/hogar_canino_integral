@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Hogar Canino Integral</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #00892e;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        /* MENÚ */
+        nav {
+            background-color: #dff1fc;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00892e;
+        }
+
+        /* CONTENIDO */
+        .contenido {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contenido h2 {
+            color: #00892e;
+        }
+
+        .info {
+            margin: 25px 0;
+            font-size: 16px;
+            color: #444;
+        }
+
+        /* MAPA */
+        .mapa {
+            margin: 30px 0;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 15px;
+        }
+
+        /* FORMULARIO */
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #00892e;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #006f24;
+        }
+
+        /* WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Contacto</h1>
+        <p>Estamos listos para cuidar a tu mejor amigo</p>
+    </div>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes_somos.html">Quiénes somos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="contenido">
+        <h2>Contáctanos</h2>
+
+        <div class="info">
+            📍 Ibagué – Tolima <br>
+            📞 WhatsApp: <strong>310 866 2385</strong> <br>
+            🐶 Cupos limitados – atención personalizada
+        </div>
+
+        <!-- MAPA GOOGLE -->
+        <div class="mapa">
+            <h3 style="color:#00892e;">Nuestra ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.6194751589704!2d-75.23151914294189!3d4.427567226862263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38c4bc0bf0ba65%3A0x867e26bfbea6ef6f!2sCra.%204d%20Sur%20%23%2028-27%2C%20Ibagu%C3%A9%2C%20Tolima!5e0!3m2!1ses!2sco!4v1769555949743!5m2!1ses!2sco" 
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- FORMULARIO QUE ENVÍA CORREOS -->
+        <form action="https://formsubmit.co/forerogualterossergioandres@gmail.com" method="POST">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="Tu número de contacto" required>
+
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu mascota" required></textarea>
+
+            <!-- CONFIGURACIÓN -->
+            <input type="hidden" name="_subject" value="Nuevo contacto - Hogar Canino Integral">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="index.html">
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/573108662385?text=Hola%20quiero%20información%20sobre%20Hogar%20Canino%20Integral"
+       class="whatsapp-float"
+       target="_blank"
+       title="Escríbenos por WhatsApp">
+        🐾
+    </a>
+
+</body>
+</html>
+
